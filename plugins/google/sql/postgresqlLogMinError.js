@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/sql/docs/postgres/flags',
     recommended_action: 'Ensure that log_min_error_statement flag is set to Error for all PostgreSQL instances.',
     apis: ['instances:sql:list', 'projects:get'],
+    compliance: {
+        cis1: '6.2.14 Ensure \'log_min_error_statement\' database flag for Cloud SQL PostgreSQL instance is set to \'Error\' or stricter'
+    },
     settings: {
         log_min_error_statement: {
             name: 'Log Min Error Statement',

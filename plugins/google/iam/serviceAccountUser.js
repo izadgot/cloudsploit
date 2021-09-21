@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/iam/docs/overview',
     recommended_action: 'Ensure that no service accounts have the Service Account User role attached.',
     apis: ['projects:getIamPolicy', 'projects:get'],
+    compliance: {
+        cis1: '1.6 Ensure that IAM users are not assigned the Service Account User or Service Account Token Creator roles at project level'
+    }
 
     run: function(cache, settings, callback) {
         var results = [];

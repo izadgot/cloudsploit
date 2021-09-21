@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/storage/docs/uniform-bucket-level-access#should-you-use',
     recommended_action: 'Make sure that storage buckets have uniform level access enabled',
     apis: ['buckets:list'],
+    compliance: {
+        cis1: '5.2 Ensure that Cloud Storage buckets have uniform bucket-level access enabled'
+    },
   
     run: function(cache, settings, callback) {
         var results = [];

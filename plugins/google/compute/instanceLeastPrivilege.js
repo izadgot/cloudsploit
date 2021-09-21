@@ -13,7 +13,8 @@ module.exports = {
         pci: 'PCI has explicit requirements around default accounts and ' +
             'resources. PCI recommends removing all default accounts, ' +
             'only enabling necessary services as required for the function ' +
-            'of the system'
+            'of the system',
+        cis1: '4.2 Ensure that instances are not configured to use the default service account with full access to all Cloud APIs'
     },
 
     run: function(cache, settings, callback) {

@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/sql/docs/postgres/flags#config',
     recommended_action: 'Ensure that log_lock_waits flag is enabled for all PostgreSQL instances.',
     apis: ['instances:sql:list', 'projects:get'],
+    compliance: {
+        cis1: '6.2.6 Ensure that the \'log_lock_waits\' database flag for Cloud SQL PostgreSQL instance is set to \'on\''
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

@@ -14,6 +14,7 @@ module.exports = {
             'containing sensitive data.',
         pci: 'PCI has a strict requirement to log all account activity ' +
              'within environments containing cardholder data.',
+        cis1: '2.5 Ensure that the log metric filter and alerts exist for Audit Configuration changes'
     },
 
     run: function(cache, settings, callback) {

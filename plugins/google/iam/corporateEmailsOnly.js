@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/iam/docs/overview',
     recommended_action: 'Ensure that no users are actively using their Gmail accounts to access GCP.',
     apis: ['projects:getIamPolicy'],
+    compliance: {
+        cis1: '1.1 Ensure that corporate login credentials are used'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

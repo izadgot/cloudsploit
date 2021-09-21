@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/sql/docs/mysql/flags',
     recommended_action: 'Ensure that local infile flag is disabled for all MySQL instances.',
     apis: ['instances:sql:list', 'projects:get'],
+    compliance: {
+        cis1: '6.1.3 Ensure that the \'local_infile\' database flag for a Cloud SQL Mysql instance is set to \'off\''
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

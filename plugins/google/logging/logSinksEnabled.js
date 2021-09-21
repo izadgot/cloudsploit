@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/logging/docs/export/',
     recommended_action: 'Ensure a log sink is configured properly with an empty filter and a destination.',
     apis: ['sinks:list', 'buckets:list', 'projects:get'],
+    compliance: {
+        cis1: '2.2 Ensure that sinks are configured for all log entries'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

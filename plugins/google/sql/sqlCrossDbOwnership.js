@@ -10,6 +10,9 @@ module.exports = {
     link: 'https://cloud.google.com/sql/docs/sqlserver/flags',
     recommended_action: 'Ensure that cross DB ownership chaining flag is disabled for all SQLServer instances.',
     apis: ['instances:sql:list', 'projects:get'],
+    compliance: {
+        cis1: '6.3.2 Ensure that the \'cross db ownership chaining\' database flag for Cloud SQL SQL Server instance is set to \'off\''
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

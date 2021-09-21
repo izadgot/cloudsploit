@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/iam/docs/creating-managing-service-account-keys',
     recommended_action: 'Ensure all user service account keys are being managed by Google.',
     apis: ['serviceAccounts:list','keys:list'],
+    compliance: {
+        cis1: '1.4 Ensure that there are only GCP-managed service account keys for each service account'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

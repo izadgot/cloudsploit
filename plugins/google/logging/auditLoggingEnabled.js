@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/logging/docs/audit/',
     recommended_action: 'Ensure that the default audit logs are enabled to log all admin activities and write and read access to data for all services.',
     apis: ['projects:getIamPolicy', 'organizations:list', 'organizations:getIamPolicy'],
+    compliance: {
+        cis1: '2.1 Ensure that Cloud Audit Logging is configured properly across all services and all users from a project'
+    },
     settings: {
         check_org_audit_logs: {
             name: 'Check Org Audit Logs',

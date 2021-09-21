@@ -15,7 +15,8 @@ module.exports = {
               'users or systems accessing HIPAA-compliant environments.',
         pci: 'PCI requires that all user credentials are rotated every 90 days. While ' +
              'IAM roles handle rotation automatically, access keys need to be manually ' +
-             'rotated.'
+             'rotated.',
+        cis1: '1.7 Ensure user-managed/external keys for service accounts are rotated every 90 days or less'
     },
 
     run: function(cache, settings, callback) {

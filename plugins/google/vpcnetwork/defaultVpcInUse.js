@@ -13,7 +13,8 @@ module.exports = {
         pci: 'PCI has explicit requirements around default accounts and ' +
             'resources. PCI recommends removing all default accounts, ' +
             'only enabling necessary services as required for the function ' +
-            'of the system'
+            'of the system',
+        cis1: '3.1 Ensure that the default network does not exist in a project'
     },
 
     run: function(cache, settings, callback) {

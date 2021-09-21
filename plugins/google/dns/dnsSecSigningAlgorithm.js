@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/dns/docs/dnssec',
     recommended_action: 'Ensure that all managed zones using DNSSEC are not using the RSASHA1 algorithm for key or zone signing.',
     apis: ['managedZones:list', 'projects:get'],
+    compliance: {
+        cis1: '3.4 Ensure that RSASHA1 is not used for the key-signing key in Cloud DNS DNSSEC\n3.5 Ensure that RSASHA1 is not used for the zone-signing key in Cloud DNS DNSSEC'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

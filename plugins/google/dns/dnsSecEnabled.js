@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/dns/docs/dnssec',
     recommended_action: 'Ensure DNSSEC is enabled for all managed zones in the cloud DNS service.',
     apis: ['managedZones:list', 'projects:get'],
+    compliance: {
+        cis1: '3.2 Ensure legacy networks do not exist for a project'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

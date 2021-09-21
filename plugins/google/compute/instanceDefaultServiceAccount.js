@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/compute/docs/access/service-accounts',
     recommended_action: 'Make sure that compute instances are not using default service account',
     apis: ['instances:compute:list', 'projects:get'],
+    compliance: {
+        cis1: '4.1 Ensure that instances are not configured to use the default service account'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/iam/docs/overview',
     recommended_action: 'Ensure that no service accounts have admin, owner, or write privileges.',
     apis: ['projects:get','projects:getIamPolicy'],
+    compliance: {
+        cis1: '1.5 Ensure that Service Account has no Admin privileges'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

@@ -9,6 +9,9 @@ module.exports = {
     link: 'https://cloud.google.com/sql/docs/mysql/configure-private-ip',
     recommended_action: 'Make sure that SQL databases IP addresses setting does not have IP address of PRIMARY type',
     apis: ['instances:sql:list', 'projects:get'],
+    compliance: {
+        cis1: '6.6 Ensure that Cloud SQL database instances do not have public IPs'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];
