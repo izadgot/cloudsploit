@@ -16,7 +16,7 @@ module.exports = {
                 'the audit controls of the HIPAA framework.',
         pci: 'PCI requires logging of all network access to environments containing ' +
              'cardholder data. Enable VPC flow logs to log these network requests.',
-        cis2: '2.9 Ensure VPC flow logging is enabled in all VPCs'
+        cis2: '3.9 Ensure VPC flow logging is enabled in all VPCs'
     },
 
     run: function(cache, settings, callback) {

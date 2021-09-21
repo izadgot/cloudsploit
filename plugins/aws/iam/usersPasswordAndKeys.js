@@ -9,6 +9,9 @@ module.exports = {
     link: 'http://docs.aws.amazon.com/IAM/latest/UserGuide/ManagingCredentials.html',
     recommended_action: 'Remove access keys from all users with console access.',
     apis: ['IAM:generateCredentialReport'],
+    compliance: {
+        cis1: '1.11 Do not setup access keys during initial user setup for all IAM users that have a console password'
+    },
     settings: {
         iam_machine_username_regex: {
             name: 'IAM Machine User Name Regex',

@@ -12,7 +12,7 @@ module.exports = {
     compliance: {
         pci: 'PCI requires that all users be removed if they are inactive for 90 days. ' +
              'If a user access key is inactive, it should be removed.',
-        cis1: '1.3 Ensure credentials unused for 90 days or greater are disabled'
+        cis1: '1.12 Ensure credentials unused for 45 days or greater are disabled'
     },
     settings: {
         access_keys_last_used_fail: {
@@ -25,7 +25,7 @@ module.exports = {
             name: 'Access Keys Last Used Warn',
             description: 'Return a warning result when access keys exceed this number of days without being used',
             regex: '^[1-9]{1}[0-9]{0,3}$',
-            default: 90
+            default: 45
         }
     },
     asl: {
@@ -36,7 +36,7 @@ module.exports = {
                 property: 'access_key_1_last_used_date',
                 transform: 'DAYSFROM',
                 op: 'GT',
-                value: 90
+                value: 45
             }
         ]
     },

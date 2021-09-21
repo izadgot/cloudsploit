@@ -30,7 +30,7 @@ module.exports = {
     compliance: {
         pci: 'PCI requires that the previous 4 passwords not be reused. ' +
              'Restricting IAM password reuse enforces this policy.',
-        cis1: '1.10 Ensure IAM password policy prevents password reuse'
+        cis1: '1.9 Ensure IAM password policy prevents password reuse'
     },
     settings: {
         password_reuse_fail: {

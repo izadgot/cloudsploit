@@ -15,7 +15,7 @@ module.exports = {
         pci: 'PCI requires tracking and monitoring of all access to environments ' +
              'in which cardholder data is present. CloudTrail bucket access logging ' +
              'helps audit the bucket in which these logs are stored.',
-        cis1: '2.6 Ensure CloudTrail bucket access logging is enabled'
+        cis1: '3.6 Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket'
     },
 
     run: function(cache, settings, callback) {

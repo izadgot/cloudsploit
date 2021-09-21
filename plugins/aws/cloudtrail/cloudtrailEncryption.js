@@ -10,7 +10,7 @@ module.exports = {
     link: 'http://docs.aws.amazon.com/awscloudtrail/latest/userguide/encrypting-cloudtrail-log-files-with-aws-kms.html',
     apis: ['CloudTrail:describeTrails'],
     compliance: {
-        cis2: '2.7 Ensure CloudTrail logs are encrypted at rest using KMS CMKs'
+        cis2: '3.7 Ensure CloudTrail logs are encrypted at rest using KMS CMKs'
     },
     remediation_description: 'Encryption for the affected Cloud trails will be enabled.',
     remediation_min_version: '202010302230',

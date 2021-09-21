@@ -13,7 +13,7 @@ module.exports = {
                 'taken in the environment. The root user lacks these controls ' +
                 'since it is not tied to a specific user. The root access keys ' +
                 'should not be used.',
-        cis1: '1.12 Ensure no root account access key exists'
+        cis1: '1.4 Ensure no \'root\' user account access key exists'
     },
 
     run: function(cache, settings, callback) {

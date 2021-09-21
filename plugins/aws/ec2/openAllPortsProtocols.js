@@ -24,7 +24,8 @@ module.exports = {
                 'configured to allow least-privilege access.',
         pci: 'PCI has explicit requirements around firewalled access to systems. ' +
              'Security groups should be properly secured to prevent access to ' +
-             'backend services.'
+             'backend services.',
+        cis1: '5.2 Ensure no security groups allow ingress from 0.0.0.0/0 to remote server administration ports'
     },
 
     run: function(cache, settings, callback) {

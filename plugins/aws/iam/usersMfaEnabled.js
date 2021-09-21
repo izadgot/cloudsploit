@@ -15,7 +15,7 @@ module.exports = {
                 'enhanced through the use of MFA.',
         pci: 'PCI requires MFA for all access to cardholder environments. ' +
              'Create an MFA key for user accounts.',
-        cis1: '1.2 Ensure multi-factor authentication (MFA) is enabled for all ' +
+        cis1: '1.10 Ensure multi-factor authentication (MFA) is enabled for all ' +
               'IAM users that have a console password'
     },
     asl: {

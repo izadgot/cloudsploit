@@ -46,7 +46,8 @@ module.exports = {
                 'of EC2 instance data at rest.',
         pci: 'PCI requires proper encryption of cardholder data at rest. EBS ' +
              'encryption should be enabled for all volumes storing this type ' +
-             'of data.'
+             'of data.',
+        cis1: '2.2.1 Ensure EBS volume encryption is enabled'
     },
     settings: {
         ebs_encryption_level: {

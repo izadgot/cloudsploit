@@ -30,7 +30,7 @@ module.exports = {
     compliance: {
         pci: 'PCI requires that passwords have a minimum length of at least 7 characters. ' +
              'Setting an IAM password length policy enforces this requirement.',
-        cis1: '1.9 Ensure IAM password policy requires minimum length of 14 or greater'
+        cis1: '1.8 Ensure IAM password policy requires minimum length of 14 or greater'
     },
     settings: {
         min_password_length_fail: {

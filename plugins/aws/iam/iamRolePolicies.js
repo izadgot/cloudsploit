@@ -12,6 +12,11 @@ module.exports = {
     recommended_action: 'Ensure that all IAM roles are scoped to specific services and API calls.',
     apis: ['IAM:listRoles', 'IAM:listRolePolicies', 'IAM:listAttachedRolePolicies', 'IAM:listPolicies',
         'IAM:getPolicy', 'IAM:getPolicyVersion', 'IAM:getRolePolicy'],
+    compliance: {
+        pci: 'PCI requires that passwords have a minimum length of at least 7 characters. ' +
+                 'Setting an IAM password length policy enforces this requirement.',
+        cis1: '1.16 Ensure IAM policies that allow full "*:*" administrative privileges are not attached'
+    },
     settings: {
         iam_role_policies_ignore_path: {
             name: 'IAM Role Policies Ignore Path',

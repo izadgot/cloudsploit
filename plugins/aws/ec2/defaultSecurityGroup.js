@@ -14,7 +14,7 @@ module.exports = {
              'Security groups are a software-layer firewall that should be used ' +
              'to isolate resources. Ensure default security groups to not allow ' +
              'unintended traffic to cross these isolation boundaries.',
-        cis2: '4.3 Ensure the default security group of every VPC restricts all traffic'
+        cis2: '5.3 Ensure the default security group of every VPC restricts all traffic'
     },
 
     run: function(cache, settings, callback) {

@@ -14,7 +14,7 @@ module.exports = {
              'to protect cardholder data. These requirements include rotating ' +
              'the key periodically. KMS provides key rotation capabilities that ' +
              'should be enabled.',
-        cis2: '2.8 Ensure rotation for customer created CMKs is enabled'
+        cis2: '3.8 Ensure rotation for customer created CMKs is enabled'
     },
     settings: {
         kms_key_policy_whitelisted_policy_ids: {

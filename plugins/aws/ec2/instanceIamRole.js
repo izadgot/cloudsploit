@@ -9,6 +9,11 @@ module.exports = {
     link: 'http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html',
     recommended_action: 'Attach an IAM role to the EC2 instance',
     apis: ['EC2:describeInstances'],
+    compliance: {
+        pci: 'PCI requires that passwords have a minimum length of at least 7 characters. ' +
+                 'Setting an IAM password length policy enforces this requirement.',
+        cis1: '1.18 Ensure IAM instance roles are used for AWS resource access from instances'
+    },
     settings: {
         instance_iam_role_threshold: {
             name: 'Instance IAM Role Threshold',

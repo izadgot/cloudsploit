@@ -10,7 +10,7 @@ module.exports = {
     link: 'http://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html',
     apis: ['CloudTrail:describeTrails', 'S3:getBucketAcl', 'S3:listBuckets'],
     compliance: {
-        cis1: '2.3 Ensure the S3 bucket used to store CloudTrail logs is not publicly accessible'
+        cis1: '3.3 Ensure the S3 bucket used to store CloudTrail logs is not publicly accessible'
     },
 
     run: function(cache, settings, callback) {

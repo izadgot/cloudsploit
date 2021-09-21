@@ -14,7 +14,7 @@ module.exports = {
              'While ConfigService cannot assist in developing secure applications, ' +
              'it can be used to detect application and environment changes that ' +
              'could introduce security risks.',
-        cis1: '2.5 Ensure AWS Config is enabled in all regions'
+        cis1: '3.5 Ensure AWS Config is enabled in all regions'
     },
 
     run: function(cache, settings, callback) {

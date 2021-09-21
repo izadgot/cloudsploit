@@ -11,6 +11,9 @@ module.exports = {
     apis: ['S3:listBuckets', 'S3:getBucketEncryption', 'KMS:listKeys', 'KMS:describeKey', 'KMS:listAliases', 'CloudFront:listDistributions', 'S3:getBucketWebsite', 'S3:getBucketLocation'],
     remediation_description: 'The impacted bucket will be configured to use either AES-256 encryption, or CMK-based encryption if a KMS key ID is provided.',
     remediation_min_version: '202006020730',
+    compliance: {
+        cis1: '2.1.1 Ensure all S3 buckets employ encryption-at-rest'
+    },
     apis_remediate: ['S3:listBuckets', 'S3:getBucketEncryption', 'S3:getBucketLocation'],
     actions: {
         remediate: ['S3:putBucketEncryption'],

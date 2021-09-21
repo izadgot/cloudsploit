@@ -16,7 +16,7 @@ module.exports = {
             'integrated into most AWS services and APIs.',
         pci: 'CloudTrail logs satisfy the PCI requirement to log all account activity ' +
             'within environments containing cardholder data.',
-        cis1: '2.1 Ensure CloudTrail is enabled in all regions'
+        cis1: '3.1 Ensure CloudTrail is enabled in all regions'
     },
     run: function(cache, settings, callback) {
         var results = [];

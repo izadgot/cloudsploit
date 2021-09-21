@@ -9,6 +9,9 @@ module.exports = {
     recommended_action: 'Update Network ACL to allow outbound/egress traffic to specific port ranges only',
     link: 'https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html',
     apis: ['EC2:describeNetworkAcls', 'STS:getCallerIdentity'],
+    compliance: {
+        cis1: '5.1 Ensure no Network ACLs allow ingress from 0.0.0.0/0 to remote server administration ports'
+    },
 
     run: function(cache, settings, callback) {
         var results = [];

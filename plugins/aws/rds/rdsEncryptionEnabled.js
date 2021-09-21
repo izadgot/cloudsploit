@@ -30,7 +30,8 @@ module.exports = {
                 'data.',
         pci: 'PCI requires proper encryption of cardholder data at rest. RDS ' +
              'encryption should be enabled for all instances storing this type ' +
-             'of data.'
+             'of data.',
+        cis1: '2.3.1 Ensure that encryption is enabled for RDS Instances'
     },
 
     run: function(cache, settings, callback) {
